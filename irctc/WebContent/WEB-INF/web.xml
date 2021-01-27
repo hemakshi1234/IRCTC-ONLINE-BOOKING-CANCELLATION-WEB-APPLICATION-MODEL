@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>irctc</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description></description>
+    <display-name>LoginController</display-name>
+    <servlet-name>LoginController</servlet-name>
+    <servlet-class>com.irctc.controller.LoginController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginController</servlet-name>
+    <url-pattern>/LoginController</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>MasterController</display-name>
+    <servlet-name>MasterController</servlet-name>
+    <servlet-class>com.irctc.controller.MasterController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MasterController</servlet-name>
+    <url-pattern>/MasterController</url-pattern>
+  </servlet-mapping>
+
+
+
+	<servlet>
+    <description></description>
+    <display-name>BookingController</display-name>
+    <servlet-name>BookingController</servlet-name>
+    <servlet-class>com.irctc.controller.BookingController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>BookingController</servlet-name>
+    <url-pattern>/BookingController</url-pattern>
+  </servlet-mapping>
+        
+        
+                
+  <listener>
+        <listener-class>
+            com.irctc.utilities.MyListener
+  		</listener-class>
+  </listener>
+  
+</web-app>
